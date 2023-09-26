@@ -1,0 +1,110 @@
+{
+  "ID": "111111111",
+  "ticker": "AAPL",
+  "annualData": [
+    {
+      "date": "2015-01-01",
+      "Revenue": 1231,
+      "netIncome": 235,
+      "fcf": 546,
+      "sharesOutstanding": 897,
+      "netPurchase": 75369
+    },
+    {
+      "date": "2016-01-01",
+      "Revenue": 12315,
+      "netIncome": 2355,
+      "fcf": 5465,
+      "sharesOutstanding": 8975,
+      "netPurchase": 753695
+    }
+  ],
+  "quarterlyData": {
+    "2015-01-01": {
+      "Revenue": 1231,
+      "netIncome": 235,
+      "fcf": 546,
+      "sharesOutstanding": 897,
+      "netPurchase": 75369
+    },
+    "2015-04-01": {
+      "Revenue": 12315,
+      "netIncome": 2355,
+      "fcf": 5465,
+      "sharesOutstanding": 8975,
+      "netPurchase": 753695
+    }
+  },
+  "pillars": {
+    "5yrEarning": {
+      "2022-05-01": 2323,
+      "2022-08-01": 1522
+    },
+    "5yrROIC": {
+      "2022-05-01": 2323,
+      "2022-08-01": 1522
+    },
+    "5yrRevenueGrowth": {
+      "2022-05-01": 2323,
+      "2022-08-01": 1522
+    },
+    "5yrIncomeGrowth": {
+      "2022-05-01": 2323,
+      "2022-08-01": 1522
+    },
+    "5yrShareGrowth": {
+      "2022-05-01": 2323,
+      "2022-08-01": 1522
+    },
+    "5yrFCF": {
+      "2022-05-01": 2323,
+      "2022-08-01": 1522
+    },
+    "LTL": {
+      "2022-05-01": 2323,
+      "2022-08-01": 1522
+    },
+    "5yrFCFGrowth": {
+      "2022-05-01": 2323,
+      "2022-08-01": 1522
+    }
+  },
+  "latestPillars": {
+    "5yrPE": 256,
+    "5yrROIC": 15,
+    "5yrRevenueGrowth": 10,
+    "5yrIncomeGrowth": 256,
+    "5yrShareGrowth": 15,
+    "LTL/5yrFCF": 10,
+    "5yrFCFGrowth": 10,
+    "5yrP/FCF": 5
+  },
+  "ownEstimates": {
+    "2015-01-01": {
+      "revenueGrowth": 12,
+      "profitMargin": 5,
+      "fcfMargin": 3,
+      "pe": 10,
+      "pfcf": 20,
+      "eaningsPrice": 255,
+      "dcfPrice": 145,
+      "price": 252,
+      "analyst": "Marius"
+    },
+    "2015-01-03": {
+      "revenueGrowth": 18,
+      "profitMargin": 2,
+      "fcfMargin": 3,
+      "pe": 10,
+      "pfcf": 20,
+      "eaningsPrice": 255,
+      "dcfPrice": 145,
+      "price": 252,
+      "analyst": "Mantas"
+    }
+  },
+  "priceTarget": {
+    "2015-01-05": 25,
+    "2025-08-06": 26
+  }
+}
