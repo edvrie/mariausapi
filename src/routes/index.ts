@@ -1,5 +1,6 @@
 import { Router } from "express";
 import ExampleSchema from "../schemas/exampleShema";
+import { RequestError } from "../utils/errorHandlers";
 
 const router = Router();
 
@@ -11,11 +12,12 @@ router.get("/", (req, res) => {
 router.post("/test", async (req, res, next) => {
   try {
     const test = new ExampleSchema(req.body);
-    console.log(test);
     await test.save();
     res.sendStatus(200);
+    return;
   } catch (err) {
-    console.log("AAAAAAAAAAA");
+    next(RequestError.InternalError(err.message));
+    return;
   }
 });
 

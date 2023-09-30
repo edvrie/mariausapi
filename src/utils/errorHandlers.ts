@@ -49,4 +49,18 @@ const invalidPayloadHandler = (
   next();
 };
 
-export { RequestError, invalidPayloadHandler };
+const errorHandler = (
+  err: Errback,
+  req: never,
+  res: Response,
+  next: NextFunction
+) => {
+  if (err instanceof RequestError) {
+    res.status(err.code).json(err);
+    return;
+  }
+
+  res.status(500).json({ code: 500, message: errorMessages.internal });
+};
+
+export { RequestError, invalidPayloadHandler, errorHandler };

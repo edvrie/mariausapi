@@ -54,6 +54,10 @@ connectDB();
 
 app.use("/", router);
 
+// Defaults all error messages through this handler
+// Mainly for formatting and automating error parsing
+app.use(ErrorHandler.errorHandler);
+
 //----------------------
 // Handle database disconnect when the server is closed
 //----------------------
