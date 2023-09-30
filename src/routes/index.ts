@@ -27,7 +27,6 @@ router.post(
 router.get("/test", async (_: never, res: Response, next: NextFunction) => {
   try {
     const test = await ExampleSchema.find({});
-    console.log(test);
     res.status(200).json(test);
     return;
   } catch (err) {
